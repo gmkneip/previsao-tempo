@@ -12,13 +12,13 @@
             <h1 class="titulo">Tempo</h1>
         <div class="buscar">
             <input type="text" placeholder="Nome da cidade" spellcheck="false"/>
-            <button><img src='./images/search.png'></button>
+            <button><img src='./src/images/search.png'></button>
         </div>
         <div class="erro">
             <p>Nome da cidade inválido</p>
         </div>
         <div class="clima">
-            <img src="./images/rain.png" class="clima-icone"/>
+            <img src="./src/images/rain.png" class="clima-icone"/>
             <h1 class="tempo">22°c</h1>
             <h2 class="cidade">Porto Alegre</h2>
             <div class="detalhes2">
@@ -37,14 +37,14 @@
             </div>
             <div class="detalhes">
                 <div class="coluna">
-                    <img src="./images/humidity.png">
+                    <img src="./src/images/humidity.png">
                     <div>
                         <p class="humidade">50%</p>
                         <p>Humidade</p>
                     </div>
                 </div>
                 <div class="coluna">
-                    <img src="./images/wind.png">
+                    <img src="./src/images/wind.png">
                     <div>
                         <p class="vento">15 km/h</p>
                         <p>Vel. do Vento</p>
@@ -80,19 +80,19 @@
         document.querySelector('.min').innerHTML = Math.round(data.main.temp_min) + '°c';
 
         if(data.weather[0].main == 'Clouds'){
-            climaIcone.src = 'images/clouds.png';
+            climaIcone.src = './src/images/clouds.png';
         }
         else if(data.weather[0].main == 'Clear'){
-            climaIcone.src = 'images/clear.png';
+            climaIcone.src = './src/images/clear.png';
         }
         else if(data.weather[0].main == 'Rain'){
-            climaIcone.src = 'images/rain.png';
+            climaIcone.src = './src/images/rain.png';
         }
         else if(data.weather[0].main == 'Drizzle'){
-            climaIcone.src = 'images/drizzle.png';
+            climaIcone.src = './src/images/drizzle.png';
         }
         else if(data.weather[0].main == 'Mist'){
-            climaIcone.src = 'images/mist.png';
+            climaIcone.src = './src/images/mist.png';
         }
 
         document.querySelector('.clima').style.display = 'block';
