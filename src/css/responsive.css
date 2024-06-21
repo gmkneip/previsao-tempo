@@ -1,0 +1,46 @@
+@media(max-width: 450px){
+    .card{
+        width: 80%;
+        padding: 0px 0px;
+    }
+    .buscar{
+        padding: 0px 15px;
+    }
+    .buscar input{
+        width: 75%;
+    }
+    .buscar button{
+        width: 50px;
+        height: 50px;
+    }
+    .titulo {
+        font-size: 25px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    .clima-icone {
+        width: 120px;
+    }
+    .clima h1 {
+        font-size: 50px;
+    }
+    .clima h2 {
+        font-size: 35px;
+    }
+    .max, .min {
+        font-size: 25px;
+    }
+    .coluna2{
+        padding: 0 15px;
+    }
+    .coluna img {
+        width: 25px;
+    }
+    .humidade, .vento{
+        font-size: 20px;
+    }
+    .coluna {
+        padding-bottom: 30px;
+        margin-top: -10px;
+    }
+}
